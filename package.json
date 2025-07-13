@@ -1,0 +1,26 @@
+{
+  "name": "pos-system",
+  "version": "1.0.0",
+  "description": "POS System",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brylletorres521/POS-system.git"
+  },
+  "keywords": [
+    "pos",
+    "php"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brylletorres521/POS-system/issues"
+  },
+  "homepage": "https://github.com/brylletorres521/POS-system#readme",
+  "dependencies": {
+    "vercel-php": "^0.6.0"
+  }
+} 
