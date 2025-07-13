@@ -22,5 +22,8 @@
   "homepage": "https://github.com/brylletorres521/POS-system#readme",
   "dependencies": {
     "vercel-php": "^0.6.0"
+  },
+  "devDependencies": {
+    "@vercel/node": "^2.15.10"
   }
 } 

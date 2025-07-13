@@ -4,9 +4,18 @@
       "runtime": "vercel-php@0.6.0"
     }
   },
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/(.*)\\.php", "destination": "/api/$1.php" }
+  ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "/api/$1" },
-    { "src": "/(.*)\\.php$", "dest": "/api/$1.php" },
+    { "handle": "filesystem" },
+    { "src": "/api/.*", "dest": "/api/index.php" },
     { "src": "/(.*)", "dest": "/$1" }
-  ]
+  ],
+  "build": {
+    "env": {
+      "NOW_PHP_DEBUG": "1"
+    }
+  }
 } 
