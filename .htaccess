@@ -1,0 +1,11 @@
+AddType application/x-httpd-php .php
+DirectoryIndex index.php index.html
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    
+    # Ensure PHP files are handled by PHP processor
+    RewriteCond %{REQUEST_FILENAME} \.php$
+    RewriteRule ^ - [L]
+</IfModule> 
