@@ -1,0 +1,4 @@
+{
+  "runtime": "vercel-php@0.6.0",
+  "handler": "index.php"
+} 
