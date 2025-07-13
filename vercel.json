@@ -13,6 +13,5 @@
     "env": {
       "NOW_PHP_DEBUG": "1"
     }
-  },
-  "nodeVersion": "18.x"
+  }
 } 
