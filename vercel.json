@@ -6,12 +6,8 @@
   },
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/$1" },
-    { "source": "/(.*)\\.php", "destination": "/api/$1.php" }
-  ],
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/api/.*", "dest": "/api/index.php" },
-    { "src": "/(.*)", "dest": "/$1" }
+    { "source": "/(.*)\\.php", "destination": "/api/$1.php" },
+    { "source": "/(.*)", "destination": "/$1" }
   ],
   "build": {
     "env": {
