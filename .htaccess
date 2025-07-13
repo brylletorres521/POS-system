@@ -1,6 +1,22 @@
+# Enable PHP processing
+AddHandler application/x-httpd-php .php
 AddType application/x-httpd-php .php
+
+# Set default index files
 DirectoryIndex index.php index.html
 
+# PHP settings
+<IfModule mod_php.c>
+    php_flag display_errors on
+    php_value error_reporting 32767
+</IfModule>
+
+# Force PHP execution
+<FilesMatch "\.php$">
+    SetHandler application/x-httpd-php
+</FilesMatch>
+
+# Enable mod_rewrite
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteBase /
